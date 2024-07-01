@@ -13,8 +13,9 @@
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="field input">
-          <label>Email Address</label>
+          <label>Email Address </label>
           <input type="text" name="email" placeholder="Enter your email" required>
+          
         </div>
         <div class="field input">
           <label>Password</label>
@@ -25,6 +26,7 @@
           <input type="submit" name="submit" value="Continue to Chat">
         </div>
       </form>
+      <!-- <div class="link">Forgot Password? <a href="index.php">Click Here</a></div> -->
       <div class="link">Not signed up yet? <a href="index.php">Signup now</a></div>
     </section>
   </div>

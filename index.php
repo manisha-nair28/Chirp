@@ -23,8 +23,13 @@
           </div>
         </div>
         <div class="field input">
-          <label>Email Address</label>
+          
+          <label>Email Address
+        
+          </label>
+         
           <input type="text" name="email" placeholder="Enter your email" required>
+          
         </div>
         <div class="field input">
           <label>Password</label>
@@ -46,5 +51,29 @@
   <script src="javascript/pass-show-hide.js"></script>
   <script src="javascript/signup.js"></script>
 
+  <script>
+    // email validation 
+    function validateEmail(email) {
+      const regex = /^[a-zA-Z0–9._-]+@[a-zA-Z0–9.-]+\.[a-zA-Z]{2,4}$/;
+      if(regex.test(email)){
+        const emailInput = document.querySelector('input[name="email"]');
+        const tick = document.createElement('i');
+        tick.classList.add('fas', 'fa-check');
+        emailInput.parentNode.appendChild(tick);
+      }
+    }
+
+    // Attaching blur and keypress events to the email input field to call the validateEmail function
+    document.querySelector('input[name="email"]').addEventListener('blur', function() {
+            validateEmail();
+        });
+
+    document.querySelector('input[name="email"]').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                validateEmail();
+            }
+        });
+  </script>
+  </script>
 </body>
 </html>
