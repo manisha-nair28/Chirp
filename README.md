@@ -17,12 +17,5 @@ A Realtime chatting application built using PHP and mySQL.
 
 
 
-## Demo
-
-https://chirp-realtime-chat.000webhostapp.com/
-
-
-## Acknowledgements
-
 
 
